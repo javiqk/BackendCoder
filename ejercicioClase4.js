@@ -15,7 +15,7 @@ class Contenedor {
             let file = fs.readFileSync(this.nombreArchivo, 'utf-8');
             productos = JSON.parse(file);
         } catch (error) {
-            console.log('No hay archivo');
+            console.log('Archivo inexistente');
         }
 
         productos.push(producto);
@@ -30,7 +30,7 @@ class Contenedor {
             let file = fs.readFileSync(this.nombreArchivo, 'utf-8');
             productos = JSON.parse(file);
         } catch (error) {
-            console.log('No hay archivo');
+            console.log('Archivo inexistente');
         }
 
         let producto = null;
@@ -43,16 +43,19 @@ class Contenedor {
 
         return producto;
     }  
-    getAll () {
-        return this.nombreArchivo
-        }
-    deleteById () {
+    getAll () {        
+        const data = fs.readFileSync(this.nombreArchivo, 'utf-8');
+        return data;
+    }
+        deleteById () {
 
-    }
-    deleteAll () {
+        }
+        deleteAll () {
+    
         
+        }
     }
-}
+
 
 let container = new Contenedor();
 console.log(container.getById(3));
