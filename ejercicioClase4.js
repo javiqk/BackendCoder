@@ -96,7 +96,7 @@ container.save('Heladera', 1200);
 container.save('Lavarropas', 7000);
 container.save('Televisor', 12000);
 
-container.getById(2);
+console.log(container.getById(2));
 container.getAll();
 container.deleteById(1);
-container.deletAll();
+container.deleteAll();
