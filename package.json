@@ -1,0 +1,22 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "backend coder",
+  "main": "ejercicioClase4.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/javiqk/BackendCoder.git"
+  },
+  "author": "Javier Cucarella",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/javiqk/BackendCoder/issues"
+  },
+  "homepage": "https://github.com/javiqk/BackendCoder#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
