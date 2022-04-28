@@ -1,5 +1,5 @@
-const button = document.getElementById("submit");
+const socket= io();
 
-button.addEventListener("click", function () {
-  alert("Object Saved");
-});
+socket.on('myMessage', (data)=>{
+    alert("escuchando");
+})
