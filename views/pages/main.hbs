@@ -11,14 +11,14 @@
     <main>
         <center>
         <div class="jumbotron">
-            <h1>Add new Product</h1>
-            <h5>Fill in all the square to add a new product</h5>
+            <h1>Añadir producto</h1>
+            <h5>Completar para añadir producto</h5>
                 <form action="/" method="post">
-                <label>Add Object:</label>
+                <label>Producto:</label>
                 <input type="text" name="title" id="object_searched" />
                 <br/>
                 <br/>
-                <label>Add Price:</label>
+                <label>Precio:</label>
                 <input type="text" name="price" id="price_searched" />
                 
                 
@@ -28,10 +28,34 @@
             
        
                 <div class="jumbotron">
-            <h1>Here you will find All the products saved!!</h1>
+            <h1>Todos los productos almacenados</h1>
             {{>list}}
 
-        </div>
+         <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Producto</th>
+                <th scope="col">Precio</th>
+                
+              </tr>
+            </thead>
+
+            <div id="tabla"></div>
+            <tbody>
+              <tr>
+                <th scope="row">
+                  <div id="id"></div>
+                </th>
+                  
+                 <th> <div id="object"></div> </th>
+                 <th> <div id="price"></div> </th>
+              </tr>
+            </tbody>
+            
+          </table>
+            
+          </div>
          </center>
     </main>
 
